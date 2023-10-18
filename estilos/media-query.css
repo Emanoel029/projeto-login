@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+/*Typical device breakpoits
+Pequenas telas: 360 x 720
+Celular: 360 x 720
+Tablets: 768 x 1024
+Desktop: 1024 x 1920
+Grandes telas: 1920
+
+*/
+
+/*Versão para tablets*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    /* Fazendo o degradê para telas de tablets */
+    background-image: linear-gradient(to top, #49a09d,  #5f2c82);
+  }
+  section#login {
+    width: 80vw; /*quando for tela de tablet*/
+
+  }
+
+  /*Imagem*/
+  section#login > div#imagem {
+    float: left; /*Colocando a img a esquerda*/
+    width: 40%; /*cupando 30% da tela do lado esquerdo*/
+    height: 100%; /*e altura de 100% da tela*/
+    float: cover;
+    background-position: left center;
+  }
+
+  /*Formulario*/
+  section#login > div#formulario {
+    float: right; /*Colocando o login a direita*/
+    width: 60%;  /*cupando 70% da largura da tela do lado direito*/
+
+  }
+}
+
+/*Telas grandes*/
+@media screen and (min-width: 1024px) {
+  body{
+    /*Degradê para telas grandes*/
+    background-image: linear-gradient(to top, #5f2c82,  #49a09d);
+  }
+
+  section#login {
+    width: 950px; /*80% quando for grandes telas*/
+  }
+
+  /*Imagem*/
+  section#login > div#imagem {
+    float: left; /*A imagem vai aparecer a esquerda*/
+    width: 50%;  /*Tamanho de 50% do lado esquedo da div*/
+    height: 100%; /*Altura de 100% do lado esquedo*/
+    background-size: cover; /*Cobre toda a área do elemento*/
+    background-position: center;
+  }
+
+  /*Formulário*/
+  section#login > div#formulario {
+    float: right; /*Ocupando o lado direito da div*/
+    width: 50%; /*Ocupando 50% do lado direito da div*/
+  }
+}
