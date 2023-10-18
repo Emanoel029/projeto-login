@@ -50,7 +50,7 @@ Grandes telas: 1920
 
   /*Imagem*/
   section#login > div#imagem {
-    float: left; /*A imagem vai aparecer a esquerda*/
+    float: right; /*A imagem vai aparecer a esquerda*/
     width: 50%;  /*Tamanho de 50% do lado esquedo da div*/
     height: 100%; /*Altura de 100% do lado esquedo*/
     background-size: cover; /*Cobre toda a área do elemento*/
@@ -59,7 +59,15 @@ Grandes telas: 1920
 
   /*Formulário*/
   section#login > div#formulario {
-    float: right; /*Ocupando o lado direito da div*/
+    float: left; /*Ocupando o lado direito da div*/
     width: 50%; /*Ocupando 50% do lado direito da div*/
+  }
+
+  div#formulario > h1 {
+    font-size: 2em; /*Aumentando o tamanho da fonte*/
+  }
+
+  div#formulario > p {
+    font-size: 1.2em; /*Aumentando o tamanho da fonte*/
   }
 }
