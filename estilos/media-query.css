@@ -17,7 +17,7 @@ Grandes telas: 1920
   }
   section#login {
     width: 80vw; /*quando for tela de tablet*/
-
+    height: 280px;
   }
 
   /*Imagem*/
@@ -46,6 +46,7 @@ Grandes telas: 1920
 
   section#login {
     width: 950px; /*80% quando for grandes telas*/
+    height: 350px;
   }
 
   /*Imagem*/
@@ -68,6 +69,7 @@ Grandes telas: 1920
   }
 
   div#formulario > p {
-    font-size: 1.2em; /*Aumentando o tamanho da fonte*/
+    font-size: 1em; /*Aumentando o tamanho da fonte*/
+    margin: 20px 0px;
   }
 }

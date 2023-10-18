@@ -29,15 +29,15 @@ section#login {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); /*Deixa tudo no meio da tela*/
-  overflow: hidden; /*Tudo q tiver fora da borda oculta*/
 
+  overflow: hidden; /*Tudo q tiver fora da borda oculta*/
   background-color: white;
   width: 250px;
   height: 515px;
   border-radius: 20px; /*Arredonda as boradas*/
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.451); /*sombra*/
 
+  transform: translate(-50%, -50%); /*Deixa tudo no meio da tela*/
   transition: width .5s, height .5s; /*Animação vai levar meio segundo p organizar o conteúdo do formulário*/
   transition-timing-function: ease; /*A animação vai dá uma suavizada*/
 }
@@ -65,14 +65,39 @@ div#formulario > p {
   font-size: 0.8em;
 }
 
-div.campo > label{
+div.campo > label{  /*Escondendo o label*/
   display: none;
+}
+
+
+div.campo > i { /*Coniguração dos icones*/
+  color: white;
+  /*background-color: black;*/
+  font-size: 2em;
+  width: 40px;
+  padding: 5px;
+}
+
+div.campo > input {
+  background-color: #68d8d5;
+  font-size: 1em;
+  width: calc(100% - 44px); /*Calculo para encaixar na o input*/
+  height: 100%;
+  border: 0px;
+  border-radius: 8px;
+  padding: 4px;
+  transform: translateY(-12px); /*Encaixando o input*/
+}
+
+div.campo > input:focus-within { /*Quando tiver digitando no input fica branco*/
+  background-color: white;
 }
 
 form > div.campo {
   background-color: #5f2c82;
+  border: 2px solid #5f2c82;
   height: 40px;
-  border-radius: 5px;
+  border-radius: 8px;
   margin: 5px 0px;
 }
 
